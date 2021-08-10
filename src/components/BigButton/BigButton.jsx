@@ -1,5 +1,5 @@
 import React from "react";
-import "BigButton.scss";
+import "./BigButton.scss";
 
 export const BigButton = (props) => {
     return (
