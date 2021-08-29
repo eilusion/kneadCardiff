@@ -9,7 +9,10 @@ export default {
 export const Default = () => {
     return (
         <BigButton
-            
+            text="add to cart"
+            onClick={() => console.log("Suckadick")}
         />
     );
 }
+
+
