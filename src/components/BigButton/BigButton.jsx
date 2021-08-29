@@ -3,8 +3,11 @@ import "./BigButton.scss";
 
 export const BigButton = (props) => {
     return (
-        <div>
-            Hero big booooy
+        <div 
+            className="BigButton" 
+            onClick={props.onClick}
+        >
+            {props.text}
         </div>
     );
 }

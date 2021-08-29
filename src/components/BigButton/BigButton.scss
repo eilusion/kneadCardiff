@@ -1,2 +1,18 @@
+@import "./../../globalStyles/variables.scss";
+
 .BigButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0px $spacingSmall;
+  font-weight: 700;
+  border: 5px solid $primary8;
+  border-radius: 1px;
+  height: $spacingBigger;
+  font-family: $mont;
+  color: $primary8;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  background-color: $neutralPaper;
+  cursor: pointer;
 }
