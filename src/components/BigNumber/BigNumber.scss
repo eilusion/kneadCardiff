@@ -1,0 +1,16 @@
+@import "./../../globalStyles/variables.scss";
+
+.BigNumber {
+    display: inline-flex;
+    align-items: center;
+    width: 133px;
+    height: 133px;
+    background: $primary12;
+    border-radius: 50%;
+    justify-content: center;
+    font-family: $barlow;
+    font-weight: 700;
+    font-size: 110px;
+    color: $neutralPaper;
+    padding-bottom: 10px;
+};
