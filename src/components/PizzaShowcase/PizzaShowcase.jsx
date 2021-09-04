@@ -9,7 +9,7 @@ import { BigButton } from "./../BigButton/BigButton";
 
 export const penceToFormattedGBP = (price) => {
     let divided = price / 100;
-    const total = `£${divided}0`;
+    const total = `£${(Math.round(divided * 100) / 100).toFixed(2)}`;
     return total; 
 }
 
@@ -31,4 +31,4 @@ export const PizzaShowcase = (props) => {
             </div>
         </div>
     )
-}
+};
