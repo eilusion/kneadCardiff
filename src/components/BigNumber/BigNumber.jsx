@@ -4,7 +4,7 @@ import "./BigNumber.scss";
 export const BigNumber = (props) => {
     return (
         <div
-        className="BigNumber"
+            className="BigNumber"
         >
             {props.text}
         </div>
