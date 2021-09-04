@@ -7,11 +7,7 @@ import { BigButton } from "./../BigButton/BigButton";
 3. ../ back one folder
 */
 
-export const penceToFormattedGBP = (price) => {
-    let divided = price / 100;
-    const total = `£${(Math.round(divided * 100) / 100).toFixed(2)}`;
-    return total; 
-}
+const total = `£${(Math.round(price) / 100).toFixed(2)}`;
 
 export const PizzaShowcase = (props) => {
     return (
