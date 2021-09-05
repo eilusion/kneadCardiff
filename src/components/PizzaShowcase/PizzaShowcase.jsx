@@ -1,13 +1,7 @@
 import React from "react";
 import "./PizzaShowcase.scss";
 import { BigButton } from "./../BigButton/BigButton";
-/* 
-1. ./src/components/pizzashowcase/pizzashowcase.jsx
-2. ./ = telling me that the path about to read is relative to this location
-3. ../ back one folder
-*/
-
-const total = `£${(Math.round(price) / 100).toFixed(2)}`;
+import { penceToFormattedGBP } from "./../../functions/penceToFormattedGBP"
 
 export const PizzaShowcase = (props) => {
     return (

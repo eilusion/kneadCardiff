@@ -6,43 +6,43 @@
     background-color: $neutralPaper;
     justify-content: center;
     flex-wrap: wrap;
-}
 
-.PizzaShowcase__title {
-    font-family: $mont;
-    font-size: 24px;
-    color: $primary6;
-    text-align: center;
-    margin: 0;
-    padding-bottom: $spacingSmall;
-}
+    &__title {
+        font-family: $mont;
+        font-size: 24px;
+        color: $primary6;
+        text-align: center;
+        margin: 0;
+        padding-bottom: $spacingSmall;
+    }
 
-.PizzaShowcase__pizzaImg {
-    width: 100%;
+    &__pizzaImg {
+        width: 100%;
+    }
+    
+    &__pizzaText {
+        font-family: $quicksand;
+        font-size: 14px;
+        color: $neutral4;
+        max-width: 295px;
+        margin: 0;
+        padding: $spacingSmall 0px;
+    }
+    
+    &__pizzaPrice {
+        font-weight: 600;
+        font-size: 24px;
+        color: $neutral2;
+        width: 100%;
+        text-align: end;
+        padding: 0px $spacingEdge;
+        font-family: $barlow;
+    }
+    
+    &__buttonWrap {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 0px $spacingEdge;
+    };
 }
-
-.PizzaShowcase__pizzaText {
-    font-family: $quicksand;
-    font-size: 14px;
-    color: $neutral4;
-    max-width: 295px;
-    margin: 0;
-    padding: $spacingSmall 0px;
-}
-
-.PizzaShowcase__pizzaPrice {
-    font-weight: 600;
-    font-size: 24px;
-    color: $neutral2;
-    width: 100%;
-    text-align: end;
-    padding: 0px $spacingEdge;
-    font-family: $barlow;
-}
-
-.PizzaShowcase__buttonWrap {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 0px $spacingEdge;
-};
