@@ -1,0 +1,1 @@
+export const penceToFormattedGBP = (price) => `£${(price / 100).toFixed(2)}`;
