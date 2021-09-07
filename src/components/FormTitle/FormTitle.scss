@@ -2,15 +2,11 @@
 
 .formTitle {
     display: flex;
-    background-color: $neutralPaper;
-
-    &__text {
-        font-family: $barlow;
-        font-size: 24px;
-        color: $neutral2;
-        text-transform: uppercase;
-        padding: 0px $spacingEdge;
-        font-weight: 500;
-        width: 100%;
-    }
+    font-family: $barlow;
+    font-size: 24px;
+    color: $neutral2;
+    text-transform: uppercase;
+    padding: 0px $spacingEdge;
+    font-weight: 500;
+    width: 100%;
 }

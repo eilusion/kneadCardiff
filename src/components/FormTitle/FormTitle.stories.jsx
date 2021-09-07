@@ -9,9 +9,9 @@ export default {
 export const Default = () => {
     return (
         <div style={{ width: "375px" }}>
-            <FormTitle
-                text="payment"
-            />
+            <FormTitle>
+                payment
+            </FormTitle>
         </div>
     );
 };
