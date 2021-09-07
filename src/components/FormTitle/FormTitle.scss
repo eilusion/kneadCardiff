@@ -1,0 +1,12 @@
+@import "./../../globalStyles/variables.scss";
+
+.formTitle {
+    display: flex;
+    font-family: $barlow;
+    font-size: 24px;
+    color: $neutral2;
+    text-transform: uppercase;
+    padding: 0px $spacingEdge;
+    font-weight: 500;
+    width: 100%;
+}
