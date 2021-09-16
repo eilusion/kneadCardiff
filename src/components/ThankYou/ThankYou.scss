@@ -8,7 +8,7 @@
 
     &__text {
         font-family: $mont;
-        font-size: 18px;
+        font-size: $largeFont;
         font-weight: 600;
         color: $neutral2;
         text-align: center;
@@ -20,7 +20,7 @@
 
     &__orderText {
         font-family: $mont;
-        font-size: 18px;
+        font-size: $largeFont;
         color: $neutral2;
         text-align: center;
         width: 100%;
@@ -31,19 +31,17 @@
 
     &__deliveryAddress {
         font-family: $barlow;
-        font-size: 14px;
+        font-size: $smallFont;
         color: $neutral2;
         font-weight: 500;
         text-transform: uppercase;
-        padding: 0px $spacingMedium;
-        width: 100%;
-        text-align: center;
         letter-spacing: 0.5px;
+        display: inline-block;
     }
 
     &__estimatedTime {
         font-family: $mont;
-        font-size: 14px;
+        font-size: $smallFont;
         color: $neutralInk;
         padding-bottom: $spacingMedium;
         padding-top: $spacingMedium;
@@ -51,13 +49,24 @@
 
     &__deliveryTitle {
         font-family: $barlow;
-        font-size: 16px;
+        font-size: $mediumFont;
         color: $neutral2;
         font-weight: 700;
         text-transform: uppercase;
-        padding-top: $spacingMedium;
-        width: 100%;
-        text-align: center;
         letter-spacing: 0.5px;
+        display: inline-block;
+    }
+
+    &__deliveryContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: $spacingMedium;
+    }
+
+    &__deliveryBox {
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 }

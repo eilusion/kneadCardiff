@@ -9,7 +9,7 @@
 
     &__title {
         font-family: $mont;
-        font-size: 24px;
+        font-size: $extraLargeFont;
         color: $primary6;
         text-align: center;
         margin: 0;
@@ -22,7 +22,7 @@
     
     &__pizzaText {
         font-family: $quicksand;
-        font-size: 14px;
+        font-size: $smallFont;
         color: $neutral4;
         max-width: 295px;
         margin: 0;
@@ -31,7 +31,7 @@
     
     &__pizzaPrice {
         font-weight: 600;
-        font-size: 24px;
+        font-size: $extraLargeFont;
         color: $neutral2;
         width: 100%;
         text-align: end;
