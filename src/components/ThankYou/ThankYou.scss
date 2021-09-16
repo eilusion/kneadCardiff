@@ -1,0 +1,72 @@
+@import "./../../globalStyles/variables.scss";
+
+.ThankYou {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $neutralPaper;
+
+    &__text {
+        font-family: $mont;
+        font-size: $largeFont;
+        font-weight: 600;
+        color: $neutral2;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding-bottom: $spacingSmall;
+        padding-top: $spacingMedium;
+    }
+
+    &__orderText {
+        font-family: $mont;
+        font-size: $largeFont;
+        color: $neutral2;
+        text-align: center;
+        width: 100%;
+        font-weight: 400;
+        margin: 0;
+        padding-bottom: $spacingMedium;
+    }
+
+    &__deliveryAddress {
+        font-family: $barlow;
+        font-size: $smallFont;
+        color: $neutral2;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        display: inline-block;
+    }
+
+    &__estimatedTime {
+        font-family: $mont;
+        font-size: $smallFont;
+        color: $neutralInk;
+        padding-bottom: $spacingMedium;
+        padding-top: $spacingMedium;
+    }
+
+    &__deliveryTitle {
+        font-family: $barlow;
+        font-size: $mediumFont;
+        color: $neutral2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        display: inline-block;
+    }
+
+    &__deliveryContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: $spacingMedium;
+    }
+
+    &__deliveryBox {
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
