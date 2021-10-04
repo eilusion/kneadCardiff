@@ -10,7 +10,7 @@ export default {
 export const Default = () => {
     return (
         <Icon
-            iconElement = {Icons.CROSS_CIRCLE}
+            IconElement={Icons.CROSS_CIRCLE}
         />
     );
 };
