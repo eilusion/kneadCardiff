@@ -1,0 +1,15 @@
+@import "./../../globalStyles/variables.scss";
+
+.PizzaBorder {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    &__borderLine {
+        height: 1px;
+        width: 130px;
+        background-color: $primary8;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
