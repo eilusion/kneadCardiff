@@ -1,6 +1,5 @@
 import React from "react";
 import { PizzaBorder } from "./PizzaBorder";
-import { Icons } from "./../../icons/Icons";
 
 export default {
     component: PizzaBorder,
@@ -10,9 +9,7 @@ export default {
 export const Default = () => {
     return (
         <div style={{ width: "375px" }}>
-            <PizzaBorder
-                IconElement={Icons.PIZZA_ICON}
-            />
+            <PizzaBorder />
         </div>
     );
 };

@@ -8,7 +8,6 @@ export const Icon = (props) => {
             style={{
                 color: props.color
             }}
-        />
-        
-    )
-}
+        />    
+    );
+};

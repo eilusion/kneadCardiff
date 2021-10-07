@@ -4,8 +4,8 @@
     display: flex;
     flex-wrap: wrap;
 
-    &__crossIcon {
-        padding: $spacingExtraSmall;
+    &__crossCircle {
+        cursor: pointer;
     }
 
     &__itemTitle {
