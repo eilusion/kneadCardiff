@@ -7,10 +7,18 @@ export default {
     title: "Components/Icon",
 };
 
-export const Default = () => {
+export const crossCircle = () => {
     return (
         <Icon
             IconElement={Icons.CROSS_CIRCLE}
+        />
+    );
+};
+
+export const pizzaIcon = () => {
+    return (
+        <Icon
+             IconElement={Icons.PIZZA_ICON}
         />
     );
 };
