@@ -1,0 +1,31 @@
+@import "./../../globalStyles/variables.scss";
+
+.MenuItem {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__crossIcon {
+        padding: $spacingExtraSmall;
+    }
+
+    &__itemTitle {
+        font-family: $mont;
+        font-size: $largeFont;
+        color: $primary8;
+        padding-left: $spacingExtraSmall;
+        padding-bottom: $spacingExtraSmall;
+
+    }
+
+    &__priceWrapper {
+        width: 100%;
+        padding-left: $spacingMedium;
+    }
+
+    &__itemPrice {
+        font-family: $barlow;
+        font-size: $largeFont;
+        color: $neutral2;
+        font-weight: 600;
+    }
+}
