@@ -2,6 +2,7 @@
 
 .RadioComp {
     display: inline-flex;
+    cursor: pointer;
 
     &__label {
         font-family: $barlow;
