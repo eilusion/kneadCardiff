@@ -1,7 +1,8 @@
 import React from "react";
 import "./RadioComp.scss";
-import { Icon } from "./../Icon/Icon"
+import { Icon } from "./../Icon/Icon";
 import { Icons } from "./../../icons/Icons";
+import { Colors } from "./../../variables/Colors"
 
 export const RadioComp = (props) => {
     return (
@@ -16,6 +17,7 @@ export const RadioComp = (props) => {
                             Icons.RADIO_CHECKED : 
                             Icons.RADIO_UNCHECKED
                     }
+                    color={Colors.NEUTRAL2}
                 />
             </div>
         </div>
