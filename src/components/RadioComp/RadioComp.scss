@@ -3,6 +3,8 @@
 .RadioComp {
     display: inline-flex;
     cursor: pointer;
+    padding-top: $spacingBigger;
+    padding-bottom: $spacingBigger;
 
     &__label {
         font-family: $barlow;
