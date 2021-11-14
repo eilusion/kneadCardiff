@@ -9,6 +9,5 @@ export const Icon = (props) => {
                 color: props.color
             }}
         />
-        
-    )
-}
+    );
+};

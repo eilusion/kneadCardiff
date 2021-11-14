@@ -1,0 +1,19 @@
+@import "./../../globalStyles/variables.scss";
+
+.RadioComp {
+    display: inline-flex;
+
+    &__label {
+        font-family: $barlow;
+        text-transform: uppercase;
+        font-size: $largeFont;
+        font-weight: 600;
+        color: $neutral2;
+    }
+
+    &__radioIcon {
+        display: flex;
+        align-items: center;
+        padding-left: $spacingExtraSmall;
+    };
+};

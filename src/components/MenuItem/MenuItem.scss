@@ -4,10 +4,6 @@
     display: flex;
     flex-wrap: wrap;
 
-    &__crossIcon {
-        padding: $spacingExtraSmall;
-    }
-
     &__itemTitle {
         font-family: $mont;
         font-size: $largeFont;
