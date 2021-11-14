@@ -1,0 +1,14 @@
+@import "./../../globalStyles/variables.scss";
+
+.TextInput {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-family: $barlow;
+    border-bottom: 3px solid $neutral6;
+    text-transform: uppercase;
+    padding-bottom: 0.3rem;
+    font-weight: 600;
+    width: 100%;
+    color: $neutral2;
+};

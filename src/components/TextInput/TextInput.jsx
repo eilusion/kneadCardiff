@@ -3,6 +3,12 @@ import "./TextInput.scss";
 
 export const TextInput = (props) => {
     return (
-        <div className="TextInput"></div>
+        <input 
+            className="TextInput" 
+            type="text"
+            value={props.value} 
+            placeholder={props.label}
+            onChange={ (event) => props.onChange(event.target.value) }
+        />
     );
 };
