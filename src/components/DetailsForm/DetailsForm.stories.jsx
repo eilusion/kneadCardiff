@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { DetailsForm } from "./DetailsForm";
 
 export default {
@@ -7,9 +7,23 @@ export default {
 };
 
 export const Default = () => {
+
+    const defaultValue = {
+        name: "",
+        email: "",
+        number: "",
+        orderType: "delivery",
+        streetAndNumber: "",
+        postcode: "",
+    };
+    const [form, setForm] = useState(defaultValue);
+
     return (        
         <div style={{ width: "375px" }}>
-            <DetailsForm />
+            <DetailsForm
+                form={form}
+                onChange={setForm}
+            />
         </div>
     );
 };
