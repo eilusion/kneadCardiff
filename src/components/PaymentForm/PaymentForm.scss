@@ -3,16 +3,17 @@
 .PaymentForm {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
-    &__middleForm {
+    &__Middle {
         display: flex;
     }
-    &__MMYY {
-        padding-right: 15px;
+    &__mmyy {
         width: 100%;
+        padding-right: $spacingSmall;
     }
-    &__CVC {
-        padding-left: 15px;
+    &__cvc {
         width: 100%;
+        padding-left: $spacingSmall;
     }
 }

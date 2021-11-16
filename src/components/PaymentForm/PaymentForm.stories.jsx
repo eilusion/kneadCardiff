@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { PaymentForm } from "./PaymentForm";
 
 export default {
@@ -7,9 +7,22 @@ export default {
 };
 
 export const Default = () => {
+
+    const defaultValue = {
+        cardNumber: "",
+        mmyy: "",
+        cvc: "",
+        postcode: "",
+    };
+
+    const [form, setForm] = useState(defaultValue);
+
     return (
         <div style={{ width: "375px" }}>
-            <PaymentForm />
+            <PaymentForm 
+                form={form}
+                onChange={setForm}
+            />
         </div>
     );
 };

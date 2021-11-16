@@ -1,42 +1,43 @@
 import React from "react";
 import "./PaymentForm.scss";
 import { TextInput } from './../TextInput/TextInput';
-import { useState } from 'react';
 
 export const PaymentForm = (props) => {
 
-    const [inputText1, setInputText1] = useState('')
-    const [inputText2, setInputText2] = useState('')
-    const [inputText3, setInputText3] = useState('')
-    const [inputText4, setInputText4] = useState('')
+    const onSingleValueChange = (formField, value) => {
+        props.onChange({
+            ...props.form,
+            [formField]: value
+        });
+    }; 
 
     return (
         <div className="PaymentForm">
             <TextInput 
                 label="card number"
-                onChange={setInputText1}
-                value={inputText1}
+                onChange={(value) => onSingleValueChange("cardNumber", value)}
+                value={props.form.cardNumber}
             />
-            <div className="PaymentForm__middleForm">
-                <div className="PaymentForm__MMYY">
-                    <TextInput 
+            <div className="PaymentForm__Middle">
+                <div className="PaymentForm__mmyy">
+                    <TextInput
                         label="mm/yy"
-                        onChange={setInputText2}
-                        value={inputText2}
+                        onChange={(value) => onSingleValueChange("mmyy", value)}
+                        value={props.form.mmyy}
                     />
                 </div>
-                <div className="PaymentForm__CVC">
+                <div className="PaymentForm__cvc">
                     <TextInput
                         label="cvc"
-                        onChange={setInputText3}
-                        value={inputText3}
+                        onChange={(value) => onSingleValueChange("cvc", value)}
+                        value={props.form.cvc} 
                     />
                 </div>
             </div>
-            <TextInput 
+            <TextInput
                 label="postcode"
-                onChange={setInputText4}
-                value={inputText4}
+                onChange={(value) => onSingleValueChange("postcode", value)}
+                value={props.form.postcode} 
             />
         </div>
     );
