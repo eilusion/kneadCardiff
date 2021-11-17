@@ -1,0 +1,19 @@
+@import "./../../globalStyles/variables.scss";
+
+.PaymentForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__Middle {
+        display: flex;
+    }
+    &__mmyy {
+        width: 100%;
+        padding-right: $spacingSmall;
+    }
+    &__cvc {
+        width: 100%;
+        padding-left: $spacingSmall;
+    }
+}
