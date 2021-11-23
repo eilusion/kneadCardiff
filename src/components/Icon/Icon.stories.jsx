@@ -38,3 +38,19 @@ export const radioChecked = () => {
         />
     );
 };
+
+export const deliveryDining = () => {
+    return (
+        <Icon 
+            IconElement={Icons.DELIVERY_DINING}
+        />
+    );
+};
+
+export const basketIcon = () => {
+    return (
+        <Icon 
+            IconElement={Icons.BASKET_ICON}
+        />
+    );
+};
