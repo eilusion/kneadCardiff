@@ -11,7 +11,8 @@ export const Default = () => {
         <div style={{ width: "375px" }}>
             <MenuItem
                 title="goats cheese romana"
-                price="£12.50"
+                price="1250"
+                onClick={console.log}
             />
         </div>
     );
