@@ -3,6 +3,7 @@ import "./CheckoutHeader.scss";
 import { Icon } from "./../Icon/Icon"
 import { Icons } from "./../../icons/Icons";
 import { Colors } from "./../../variables/Colors"
+import { penceToFormattedGBP } from "../../functions/penceToFormattedGBP";
 
 export const CheckoutHeader = (props) => {
     return (
@@ -11,7 +12,7 @@ export const CheckoutHeader = (props) => {
                 <div className="CheckoutHeader__deliveryDining">
                     <Icon
                         IconElement={Icons.DELIVERY_DINING}
-                        color={Colors.PRIMARY6}
+                        color={Colors.NEUTRALPAPER}
                     />
                 </div>
                 <div className="CheckoutHeader__pizzaCounter">{props.pizzaCounter}</div>
@@ -19,7 +20,7 @@ export const CheckoutHeader = (props) => {
                         IconElement={Icons.PIZZA_ICON}
                         color={Colors.PRIMARY6}
                     />
-                <div className="CheckoutHeader__totalPrice">{props.totalPrice}</div>
+                <div className="CheckoutHeader__totalPrice">{penceToFormattedGBP(props.totalPrice)}</div>
                 <div className="CheckoutHeader__diningBorder">
                     <Icon
                         IconElement={Icons.BASKET_ICON}

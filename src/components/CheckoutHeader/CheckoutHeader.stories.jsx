@@ -10,8 +10,8 @@ export const Default = () => {
     return (
         <div style={{ width: "375px" }}>
             <CheckoutHeader
-                pizzaCounter="2"
-                totalPrice="(£26.00)"             
+                pizzaCounter={2}
+                totalPrice={2600}            
             />
         </div>
     );
