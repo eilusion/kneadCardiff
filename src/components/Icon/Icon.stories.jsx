@@ -1,4 +1,5 @@
 import React from "react";
+import * as R from "ramda";
 import { Icon } from "./Icon";
 import { Icons } from "./../../icons/Icons";
 
@@ -7,50 +8,15 @@ export default {
     title: "Components/Icon",
 };
 
-export const crossCircle = () => {
+export const Default = () => {
     return (
-        <Icon
-            IconElement={Icons.CROSS_CIRCLE}
-        />
-    );
-};
-
-export const pizzaIcon = () => {
-    return (
-        <Icon
-             IconElement={Icons.PIZZA_ICON}
-        />
-    );
-};
-
-export const radioUnchecked = () => {
-    return (
-        <Icon 
-            IconElement={Icons.RADIO_UNCHECKED}
-        />
-    );
-};
-
-export const radioChecked = () => {
-    return (
-        <Icon 
-            IconElement={Icons.RADIO_CHECKED}
-        />
-    );
-};
-
-export const deliveryDining = () => {
-    return (
-        <Icon 
-            IconElement={Icons.DELIVERY_DINING}
-        />
-    );
-};
-
-export const basketIcon = () => {
-    return (
-        <Icon 
-            IconElement={Icons.BASKET_ICON}
-        />
+        <div>
+            {R.pipe(
+                R.toPairs,
+                R.map(([key, value]) => (
+                    <Icon key={key} IconElement={value} />
+                )),
+            )(Icons)}
+        </div>
     );
 };
