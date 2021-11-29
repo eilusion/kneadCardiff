@@ -13,8 +13,12 @@ export const Default = () => {
         <div>
             {R.pipe(
                 R.toPairs,
-                R.map(([key, value]) => (
-                    <Icon key={key} IconElement={value} />
+                R.map(([key, value, size]) => (
+                    <Icon
+                        key={key}
+                        IconElement={value}
+                        size={size}
+                    />
                 )),
             )(Icons)}
         </div>
