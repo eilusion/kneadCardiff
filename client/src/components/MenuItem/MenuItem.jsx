@@ -1,8 +1,8 @@
 import React from "react";
 import "./MenuItem.scss";
-import { Icon } from "./../Icon/Icon"
+import { Icon } from "../Icon/Icon"
 import { Icons } from "./../../icons/Icons";
-import { Colors } from "./../../variables/Colors"
+import { Colors } from "../../variables/Colors"
 import { penceToFormattedGBP } from "./../../functions/penceToFormattedGBP"
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import "./BasketItems.scss";
-import { MenuItem } from './../MenuItem/MenuItem';
+import { MenuItem } from '../MenuItem/MenuItem';
 
 export const BasketItems = (props) => {
     return (
