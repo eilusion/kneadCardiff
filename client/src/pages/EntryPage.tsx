@@ -1,5 +1,5 @@
 import React from "react";
-import "./EntryPage.css";
+// import "./EntryPage.css";
 
 type TEntryPageProps = {}
 
