@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:api:ts": "yarn tsc -p api --watch",
+    "watch:client:ts": "yarn tsc -p client --watch",
     "watch:server": "yarn pm2 kill && yarn pm2 start dist/api/src/server.js --watch --no-daemon",
     "storybook": "start-storybook -p 6006 --no-dll",
     "build-storybook": "build-storybook"
