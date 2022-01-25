@@ -1,0 +1,10 @@
+.formTitle {
+    display: flex;
+    font-family: --barlow;
+    font-size: --extra-large-font;
+    color: --neutra-l2;
+    text-transform: uppercase;
+    padding: 0px --spacing-edge;
+    font-weight: 500;
+    width: 100%;
+}

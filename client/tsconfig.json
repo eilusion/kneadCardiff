@@ -16,7 +16,7 @@
         "src/**/*.ts",
         "src/**/*.tsx",
         "src/**/*.json"
-    ],
+, "src/components/DetailsForm/DetailsForm.jsx", "src/components/TextInput/TextInput.jsx"    ],
     "exclude": [
         "**/*.stories.tsx"
     ]

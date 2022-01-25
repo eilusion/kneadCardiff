@@ -1,0 +1,22 @@
+.MainHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.MainHeader__bottomBorder {
+    height: 1px;
+    width: 295px;
+    background-color: --primary-10;
+    margin: auto;
+    margin-top: --spacing-small;
+}
+.MainHeader__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    background-color: --primary-8;
+    border-radius: 50%;
+}

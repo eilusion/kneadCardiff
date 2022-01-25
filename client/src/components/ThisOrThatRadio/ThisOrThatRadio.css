@@ -1,0 +1,14 @@
+.ThisOrThatRadio {
+    display: flex;
+    justify-content: space-around;
+}
+.ThisOrThatRadio__or {
+    font-family: --barlow;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: --neutral-2;
+    display: flex;
+    align-items: center;
+    padding-left: --spacing-small;
+    padding-right: --spacing-small;
+}
