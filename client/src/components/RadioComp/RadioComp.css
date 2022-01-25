@@ -1,0 +1,18 @@
+.RadioComp {
+    display: inline-flex;
+    cursor: pointer;
+    padding-top: --spacing-bigger;
+    padding-bottom: --spacing-bigger;
+}
+.RadioComp__label {
+    font-family: --barlow;
+    text-transform: uppercase;
+    font-size: --large-font;
+    font-weight: 600;
+    color: --neutra-l2;
+}
+.RadioComp__radioIcon {
+    display: flex;
+    align-items: center;
+    padding-left: --spacing-extra-small;
+}

@@ -1,0 +1,12 @@
+.PizzaBorder {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.PizzaBorder__borderLine {
+    height: 1px;
+    width: 130px;
+    background-color: --primary-8;
+    margin-top: auto;
+    margin-bottom: auto;
+}

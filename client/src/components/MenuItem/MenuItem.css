@@ -1,0 +1,25 @@
+.MenuItem {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: --spacing-small;
+}
+.MenuItem__itemTitle {
+    font-family: --mont;
+    font-size: --large-font;
+    color: --primary-8;
+    padding-left: --spacing-extra-small;
+    padding-bottom: --spacing-extra-small;
+}
+.MenuItem__priceWrapper {
+    width: 100%;
+    padding-left: --spacing-medium;
+}
+.MenuItem__itemPrice {
+    font-family: --barlow;
+    font-size: --large-font;
+    color: --neutral-2;
+    font-weight: 600;
+}
+.MenuItem__crossIcon {
+    cursor: pointer;
+}

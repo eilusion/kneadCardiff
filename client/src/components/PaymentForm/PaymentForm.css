@@ -1,0 +1,16 @@
+.PaymentForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.PaymentForm__Middle {
+    display: flex;
+}
+.PaymentForm__mmyy {
+    width: 100%;
+    padding-right: --spacing-small;
+}
+.PaymentForm__cvc {
+    width: 100%;
+    padding-left: --spacing-small;
+}

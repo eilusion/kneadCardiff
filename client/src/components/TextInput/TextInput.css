@@ -1,0 +1,13 @@
+.TextInput {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-family: --barlow;
+    border-bottom: 3px solid --neutra-l6;
+    text-transform: uppercase;
+    padding-bottom: 0.3rem;
+    padding-top: --spacing-medium;
+    font-weight: 600;
+    width: 100%;
+    color: --neutra-l2;
+};

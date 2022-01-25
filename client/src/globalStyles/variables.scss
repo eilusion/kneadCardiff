@@ -1,37 +1,37 @@
-@import "./normalize.scss";
+@import "./normalise.css";
 
-$primary14: #51A0AA;
-$primary12: #228E9C;
-$primary10: #028090;
-$primary8: #096E7B;
-$primary6: #195D66;
+:root {
+    --primary-14: #51A0AA;
+    --primary-12: #228E9C;
+    --primary-10: #028090;
+    --primary-8: #096E7B;
+    --primary-6: #195D66;
+    
+    --neutral-Paper: #F1F7EE;
+    --neutral-14: #E6EBE3;
+    --neutral-12: #D6D9D4;
+    --neutral-10: #BABEB8;
+    --neutral-8: #9EA59A;
+    --neutral-6: #898C87;
+    --neutral-4: #737771;
+    --neutral-2: #585C56;
+    --neutral-Ink: #383C36;
 
-$neutralPaper: #F1F7EE;
-$neutral14: #E6EBE3;
-$neutral12: #D6D9D4;
-$neutral10: #BABEB8;
-$neutral8: #9EA59A;
-$neutral6: #898C87;
-$neutral4: #737771;
-$neutral2: #585C56;
-$neutralInk: #383C36;
+    --secondary-10: #B0BEA9;
 
-$secondary10: #B0BEA9;
+    --spacing-extra-small: 10px;
+    --spacing-small: 15px;
+    --spacing-edge: 25px;
+    --spacing-medium: 30px;
+    --spacing-bigger: 40px;
+    --spacing-largest: 70px;
 
-$spacingExtraSmall: 10px;
-$spacingSmall: 15px;
-$spacingEdge: 25px;
-$spacingMedium: 30px;
-$spacingBigger: 40px;
-$spacingLargest: 70px;
+    --mont: 'Montserrat Subrayada', sans-serif;
+    --barlow: 'Barlow', sans-serif;
+    --quicksand: 'Quicksand', sans-serif;
 
-$mont: 'Montserrat Subrayada', sans-serif;
-$barlow: 'Barlow', sans-serif;
-$quicksand: 'Quicksand', sans-serif;
-
-$smallFont: 14px;
-$mediumFont: 16px;
-$largeFont: 18px;
-$extraLargeFont: 24px;
-
-
+    --small-font: 14px;
+    --medium-font: 16px;
+    --large-font: 18px;
+    --extra-large-font: 24px;
+}
