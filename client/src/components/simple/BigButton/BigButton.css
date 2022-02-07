@@ -1,4 +1,4 @@
-@import "./../../globalStyles/variables.css";
+@import "./../../../globalStyles/variables.css";
 
 .BigButton {
   display: inline-flex;

@@ -1,4 +1,4 @@
-@import "./../../globalStyles/variables.css";
+@import "./../../../globalStyles/variables.css";
 
 .detailsForm {
     display: flex;

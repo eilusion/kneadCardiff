@@ -1,9 +1,9 @@
-@import "./../../globalStyles/variables.css";
+@import "./../../globalStyles/normalise.css";
 
 .LandingPage {
     max-width: 375px;
     height: 100%;
-    background-color: var(--neutral-14);
+    background-color: var(--neutral-Paper);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,5 +13,5 @@
     padding-bottom: var(--spacing-medium);
 }
 .PizzaShowcase {
-    padding-top: var(--spacing-largest)
+    padding-top: var(--spacing-medium);
 }
