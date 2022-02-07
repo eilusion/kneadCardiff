@@ -1,25 +1,27 @@
+@import "./../../globalStyles/variables.css";
+
 .CheckoutHeader {
     width: 100%;
 }
 .CheckoutHeader__container {
     display: flex;
     align-items: center;
-    padding-left: --spacing-edge;
-    padding-right: --spacing-edge;
+    padding-left: var(--spacing-edge);
+    padding-right: var(--spacing-edge);
     justify-content: flex-end;
 }
 .CheckoutHeader__bottomBorder {
     height: 1px;
     width: 295px;
-    background-color: --primary-10;
+    background-color: var(--primary-10);
     margin: auto;
-    margin-top: --spacing-small;
+    margin-top: var(--spacing-small);
 }
 .CheckoutHeader__diningBorder {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid --primary-6;
+    border: 3px solid var(--primary-6);
     border-radius: 50%;
     height: 40px;
     width: 40px;
@@ -29,22 +31,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: --primary-6;
+    background-color: var(--primary-6);
     border-radius: 50%;
     height: 40px;
     width: 40px;
 }
 .CheckoutHeader__pizzaCounter {
-    font-family: --barlow;
+    font-family: var(--barlow);
     font-weight: 500;
-    color: --primary-6;
+    color: var(--primary-6);
     font-size: 20px;
     padding-right: 5px;
 }
 .CheckoutHeader__totalPrice {
-    font-family: --barlow;
+    font-family: var(--barlow);
     font-weight: 500;
-    color: --primary-6;
+    color: var(--primary-6);
     font-size: 20px;
     padding-left: 10px;
     padding-right: 12px;

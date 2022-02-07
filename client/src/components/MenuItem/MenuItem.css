@@ -1,23 +1,25 @@
+@import "./../../globalStyles/variables.css";
+
 .MenuItem {
     display: flex;
     flex-wrap: wrap;
-    padding-top: --spacing-small;
+    padding-top: var(--spacing-small);
 }
 .MenuItem__itemTitle {
-    font-family: --mont;
-    font-size: --large-font;
-    color: --primary-8;
-    padding-left: --spacing-extra-small;
-    padding-bottom: --spacing-extra-small;
+    font-family: var(--mont);
+    font-size: var(--large-font);
+    color: var(--primary-8);
+    padding-left: var(--spacing-extra-small);
+    padding-bottom: var(--spacing-extra-small);
 }
 .MenuItem__priceWrapper {
     width: 100%;
-    padding-left: --spacing-medium;
+    padding-left: var(--spacing-medium);
 }
 .MenuItem__itemPrice {
-    font-family: --barlow;
-    font-size: --large-font;
-    color: --neutral-2;
+    font-family: var(--barlow);
+    font-size: var(--large-font);
+    color: var(--neutral-2);
     font-weight: 600;
 }
 .MenuItem__crossIcon {

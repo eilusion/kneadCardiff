@@ -1,50 +1,52 @@
+@import "./../../globalStyles/variables.css";
+
 .ThankYou {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: --neutral-paper;
+    background-color: var(--neutral-paper);
 }
 .ThankYou__text {
-    font-family: --mont;
-    font-size: --large-font;
+    font-family: var(--mont);
+    font-size: var(--large-font);
     font-weight: 600;
-    color: --neutral-2;
+    color: var(--neutral-2);
     text-align: center;
     width: 100%;
     margin: 0;
-    padding-bottom: --spacing-small;
-    padding-top: --spacing-medium;
+    padding-bottom: var(--spacing-small);
+    padding-top: var(--spacing-medium);
 }
 .ThankYou__orderText {
-    font-family: --mont;
-    font-size: --large-font;
-    color: --neutral-2;
+    font-family: var(--mont);
+    font-size: var(--large-font);
+    color: var(--neutral-2);
     text-align: center;
     width: 100%;
     font-weight: 400;
     margin: 0;
-    padding-bottom: --spacing-medium;
+    padding-bottom: var(--spacing-medium);
 }
 .ThankYou__deliveryAddress {
-    font-family: --barlow;
-    font-size: --small-font;
-    color: --neutral-2;
+    font-family: var(--barlow);
+    font-size: var(--small-font);
+    color: var(--neutral-2);
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     display: inline-block;
 }
 .ThankYou__estimatedTime {
-    font-family: --mont;
-    font-size: --small-font;
-    color: --neutral-ink;
-    padding-bottom: --spacing-medium;
-    padding-top: --spacing-medium;
+    font-family: var(--mont);
+    font-size: var(--small-font);
+    color: var(--neutral-ink);
+    padding-bottom: var(--spacing-medium);
+    padding-top: var(--spacing-medium);
 }
 .ThankYou__deliveryTitle {
-    font-family: --barlow;
-    font-size: --medium-font;
-    color: --neutral-2;
+    font-family: var(--barlow);
+    font-size: var(--medium-font);
+    color: var(--neutral-2);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -54,7 +56,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    padding-top: --spacing-medium;
+    padding-top: var(--spacing-medium);
 }
 .ThankYou__deliveryBox {
     display: inline-flex;

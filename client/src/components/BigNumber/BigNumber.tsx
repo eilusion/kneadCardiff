@@ -3,7 +3,7 @@ import "./BigNumber.css";
 
 type TBigNumberProps = {
     text: string,
-};
+}
 
 export const BigNumber = (props: TBigNumberProps) => {
     return (
@@ -12,5 +12,5 @@ export const BigNumber = (props: TBigNumberProps) => {
         >
             {props.text}
         </div>
-    )
-}
+    );
+};

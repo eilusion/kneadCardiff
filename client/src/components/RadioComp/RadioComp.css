@@ -1,18 +1,20 @@
+@import "./../../globalStyles/variables.css";
+
 .RadioComp {
     display: inline-flex;
     cursor: pointer;
-    padding-top: --spacing-bigger;
-    padding-bottom: --spacing-bigger;
+    padding-top: var(--spacing-bigger);
+    padding-bottom: var(--spacing-bigger);
 }
 .RadioComp__label {
-    font-family: --barlow;
+    font-family: var(--barlow);
     text-transform: uppercase;
-    font-size: --large-font;
+    font-size: var(--large-font);
     font-weight: 600;
-    color: --neutra-l2;
+    color: var(--neutra-l2);
 }
 .RadioComp__radioIcon {
     display: flex;
     align-items: center;
-    padding-left: --spacing-extra-small;
+    padding-left: var(--spacing-extra-small);
 }
