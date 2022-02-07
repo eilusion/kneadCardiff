@@ -8,7 +8,7 @@ type TMainHeaderProps = {
     
 }
 
-export const  MainHeader = (props: TMainHeaderProps) => {
+export const MainHeader = (props: TMainHeaderProps) => {
     return (
         <div className="MainHeader">
             <div className="MainHeader__logo">

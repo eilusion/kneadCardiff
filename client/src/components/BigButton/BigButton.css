@@ -1,16 +1,18 @@
+@import "./../../globalStyles/variables.css";
+
 .BigButton {
   display: inline-flex;
   align-items: center;
-  padding: 0px --spacing-small;
+  padding: 0px var(--spacing-small);
   font-weight: 700;
-  border: 5px solid --primary-8;
+  border: 5px solid var(--primary-8);
   border-radius: 1px;
-  height: --spacing-bigger;
-  font-family: --mont;
-  color: --primary-8;
+  height: var(--spacing-bigger);
+  font-family: var(--mont);
+  color: var(--primary-8);
   text-transform: uppercase;
   text-align: center;
   line-height: 1;
-  background-color: --neutral-paper;
+  background-color: var(--neutral-paper);
   cursor: pointer;
 }

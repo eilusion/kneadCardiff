@@ -1,3 +1,5 @@
+@import "./../../globalStyles/variables.css";
+
 .MainHeader {
     display: flex;
     flex-direction: column;
@@ -7,9 +9,9 @@
 .MainHeader__bottomBorder {
     height: 1px;
     width: 295px;
-    background-color: --primary-10;
+    background-color: var(--primary-10);
     margin: auto;
-    margin-top: --spacing-small;
+    margin-top: var(--spacing-small);
 }
 .MainHeader__logo {
     display: flex;
@@ -17,6 +19,6 @@
     justify-content: center;
     height: 120px;
     width: 120px;
-    background-color: --primary-8;
+    background-color: var(--primary-8);
     border-radius: 50%;
 }

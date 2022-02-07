@@ -1,41 +1,44 @@
+@import "./../../globalStyles/variables.css";
+
 .PizzaShowcase {
     display: flex;
     flex-direction: row;
-    background-color: --neutral-paper;
+    background-color: var(--neutral-paper);
     justify-content: center;
     flex-wrap: wrap;
 }
 .PizzaShowcase__title {
-    font-family: --mont;
-    font-size: --extra-large-font;
-    color: --primary-6;
+    font-family: var(--mont);
+    font-size: var(--extra-large-font);
+    color: var(--primary-6);
     text-align: center;
     margin: 0;
-    padding-bottom: --spacing-small;
+    padding-bottom: var(--spacing-small);
+    text-transform: uppercase;
 }
 .PizzaShowcase__pizzaImg {
     width: 100%;
 }
 .PizzaShowcase__pizzaText {
-    font-family: --quicksand;
-    font-size: --small-font;
-    color: --neutra-l4;
+    font-family: var(--quicksand);
+    font-size: var(--small-font);
+    color: var(--neutral-2);
     max-width: 295px;
     margin: 0;
-    padding: --spacing-small 0px;
+    padding: var(--spacing-small) 0px;
 }
 .PizzaShowcase__pizzaPrice {
     font-weight: 600;
-    font-size: --extra-large-font;
-    color: --neutral2;
+    font-size: var(--extra-large-font);
+    color: var(--neutral-2);
     width: 100%;
     text-align: end;
-    padding: 0px --spacing-edge;
-    font-family: -barlow;
+    padding: 0px var(--spacing-edge);
+    font-family: var(--barlow);
 }
 .PizzaShowcase__buttonWrap {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding: 0px --spacing-edge;
+    padding: 0px var(--spacing-edge);
 }

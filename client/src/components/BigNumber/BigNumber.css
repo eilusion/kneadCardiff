@@ -1,14 +1,16 @@
+@import "./../../globalStyles/variables.css";
+
 .BigNumber {
     display: inline-flex;
     align-items: center;
     width: 133px;
     height: 133px;
-    background: --primary-12;
+    background: var(--primary-12);
     border-radius: 50%;
     justify-content: center;
-    font-family: --barlow;
+    font-family: var(--barlow);
     font-weight: 700;
     font-size: 110px;
-    color: --neutral-paper;
+    color: var(--neutral-paper);
     padding-bottom: 10px;
-};
+}

@@ -1,3 +1,5 @@
+@import "./../../globalStyles/variables.css";
+
 .PaymentForm {
     display: flex;
     flex-direction: column;
@@ -8,9 +10,9 @@
 }
 .PaymentForm__mmyy {
     width: 100%;
-    padding-right: --spacing-small;
+    padding-right: var(--spacing-small);
 }
 .PaymentForm__cvc {
     width: 100%;
-    padding-left: --spacing-small;
+    padding-left: var(--spacing-small);
 }
