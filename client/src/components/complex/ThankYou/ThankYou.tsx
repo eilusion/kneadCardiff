@@ -1,6 +1,6 @@
 import React from "react";
 import "./ThankYou.css";
-import { BigNumber } from "../BigNumber/BigNumber"
+import { BigNumber } from "../../simple/BigNumber/BigNumber"
 
 type TThankYouProps = {
     thanksText: string,

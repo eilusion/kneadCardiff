@@ -1,5 +1,5 @@
 import React from "react";
-import { THexColor, TSVGComponent } from "../../Types";
+import { THexColor, TSVGComponent } from "../../../Types";
 import "./Icon.css";
 
 type TIconProps = {

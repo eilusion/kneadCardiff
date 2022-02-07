@@ -1,8 +1,8 @@
 import React, { MouseEventHandler } from "react";
 import "./RadioComp.css";
-import { Icon } from "../Icon/Icon";
-import { Icons } from "../../icons/Icons";
-import { Colors } from "../../variables/Colors"
+import { Icon } from "../../simple/Icon/Icon";
+import { Icons } from "../../../icons/Icons";
+import { Colors } from "../../../variables/Colors"
 
 type TRadioCompProps = {
     onClick: MouseEventHandler,

@@ -1,7 +1,7 @@
 import React from "react";
 import * as R from "ramda";
 import { Icon } from "./Icon";
-import { Icons } from "./../../icons/Icons";
+import { Icons } from "../../../icons/Icons";
 
 export default {
     component: Icon,
