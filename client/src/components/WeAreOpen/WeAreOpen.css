@@ -1,0 +1,17 @@
+@import "./../../globalStyles/variables.css";
+
+.WeAreOpen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.OpenText {
+    font-family: var(--mont);
+    font-size: var(--extra-large-font);
+    color: var(--primary-6);
+}
+.AvailableText {
+    font-family: var(--barlow);
+    font-size: var(--medium-font);
+    color: var(--neutral-Ink);
+}
