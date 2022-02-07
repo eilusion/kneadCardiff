@@ -5,6 +5,7 @@ const server = express();
 const portNumber = 8000;
 const router = express.Router();
 
+router.use("/dist", express.static(`${process.cwd()}/dist/bundled`))
 router.get("/*", getClientApp);
 
 server

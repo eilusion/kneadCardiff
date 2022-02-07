@@ -5,7 +5,15 @@ const esbuildConfig = require('./esbuild.config');
 esbuild
     .build({
         ...esbuildConfig.default,
-        watch: true,
+        watch: {
+            onRebuild(error, result) {
+                if (error) {
+                    console.error('esbuild error:', error);
+                } else {
+                    console.log('Bundled successfully');
+                }
+            },
+        },
         metafile: true,
         minify: false,
     })

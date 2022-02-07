@@ -1,10 +1,16 @@
+import * as fs from "fs";
 import * as express from "express";
 import ReactDOMServer = require("react-dom/server"); 
 import { getClientAppIndex } from "./getClientAppIndex";
 
 export const getClientApp = (request: express.Request, response: express.Response) => {
+    const jsBundleName = getBundleNameByExtensionName(".js");
+    const cssBundleName = getBundleNameByExtensionName(".css");
     const appMarkup = ReactDOMServer.renderToStaticMarkup(
-        getClientAppIndex({})
+        getClientAppIndex({
+            jsBundleName, 
+            cssBundleName
+        })
     );
 
     disableBrowserCacheLoading(response);
@@ -17,3 +23,9 @@ const disableBrowserCacheLoading = (response: express.Response) => {
     response.set("Expires", "0");
     response.set("Surrogate-Control", "no-store");
 };
+
+const getBundleNameByExtensionName = (extensionName) =>
+    fs
+        .readdirSync(`${process.cwd()}/dist/bundled`)
+        .filter(fn => fn.endsWith(extensionName))[0]
+    ;
