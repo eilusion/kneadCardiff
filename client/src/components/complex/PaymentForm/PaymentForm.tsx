@@ -1,6 +1,6 @@
 import React, { MouseEventHandler } from "react";
 import "./PaymentForm.css";
-import { TextInput } from '../TextInput/TextInput';
+import { TextInput } from '../../simple/TextInput/TextInput';
 
 type TPaymentFormProps = {
     onChange: MouseEventHandler,

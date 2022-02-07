@@ -1,6 +1,6 @@
 import React, { MouseEventHandler } from "react";
 import "./DetailsForm.css";
-import { TextInput } from '../TextInput/TextInput';
+import { TextInput } from '../../simple/TextInput/TextInput';
 import { ThisOrThatRadio } from '../ThisOrThatRadio/ThisOrThatRadio'
 
 type TDetailsFormProps = {

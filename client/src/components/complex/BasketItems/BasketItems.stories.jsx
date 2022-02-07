@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BasketItems } from "./BasketItems";
-import { arrayRemoveByIndexWorst, arrayRemoveByIndexDecentV2, arrayRemoveByIndexDecentV1 } from './../../functions/array';
+import { arrayRemoveByIndexWorst, arrayRemoveByIndexDecentV2, arrayRemoveByIndexDecentV1 } from '../../../functions/array';
 import { remove } from 'ramda'
 
 

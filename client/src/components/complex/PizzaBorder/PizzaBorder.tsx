@@ -1,8 +1,8 @@
 import React from "react";
 import "./PizzaBorder.css";
-import { Icon } from "../Icon/Icon"
-import { Icons } from "../../icons/Icons";
-import { Colors } from "../../variables/Colors"
+import { Icon } from "../../simple/Icon/Icon"
+import { Icons } from "../../../icons/Icons";
+import { Colors } from "../../../variables/Colors"
 
 type TPizzaBorderProps = {
     

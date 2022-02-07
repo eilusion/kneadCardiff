@@ -1,7 +1,7 @@
 import React, { MouseEventHandler } from "react";
 import "./PizzaShowcase.css";
-import { BigButton } from "../BigButton/BigButton";
-import { penceToFormattedGBP } from "../../functions/penceToFormattedGBP"
+import { BigButton } from "../../simple/BigButton/BigButton";
+import { penceToFormattedGBP } from "../../../functions/penceToFormattedGBP"
 
 type TPizzaShowcaseProps = {
     title: string,

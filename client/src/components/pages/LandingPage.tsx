@@ -1,8 +1,9 @@
 import React from "react";
 import "./LandingPage.css";
-import { MainHeader } from "./../MainHeader/MainHeader";
-import { BigNumber } from "./../BigNumber/BigNumber";
-import { PizzaShowcase } from "./../PizzaShowcase/PizzaShowcase";
+import { MainHeader } from "../complex/MainHeader/MainHeader";
+import { BigNumber } from "../simple/BigNumber/BigNumber";
+import { PizzaShowcase } from "../complex/PizzaShowcase/PizzaShowcase";
+import { WeAreOpen } from "../simple/WeAreOpen/WeAreOpen";
 
 type TLandingPageProps = {
 
@@ -13,6 +14,12 @@ export const LandingPage = (props: TLandingPageProps) => {
         <div className="LandingPage">
             <div className="MainHeader">
                 <MainHeader />
+            </div>
+            <div>
+                <WeAreOpen 
+                    openText="we are open!"
+                    availableText="pizza's available"
+                />
             </div>
             <div className="BigNumber">
                 <BigNumber text="6"/>

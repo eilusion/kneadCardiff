@@ -9,9 +9,11 @@
     font-family: var(--mont);
     font-size: var(--extra-large-font);
     color: var(--primary-6);
+    text-transform: uppercase;
 }
 .AvailableText {
     font-family: var(--barlow);
     font-size: var(--medium-font);
-    color: var(--neutral-Ink);
+    color: var(--neutral-2);
+    text-transform: uppercase;
 }

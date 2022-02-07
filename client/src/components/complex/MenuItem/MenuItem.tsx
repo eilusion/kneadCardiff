@@ -1,9 +1,9 @@
 import React, { MouseEventHandler } from "react";
 import "./MenuItem.css";
-import { Icon } from "../Icon/Icon"
-import { Icons } from "../../icons/Icons";
-import { Colors } from "../../variables/Colors"
-import { penceToFormattedGBP } from "../../functions/penceToFormattedGBP"
+import { Icon } from "../../simple/Icon/Icon"
+import { Icons } from "../../../icons/Icons";
+import { Colors } from "../../../variables/Colors"
+import { penceToFormattedGBP } from "../../../functions/penceToFormattedGBP"
 
 type TMenuItemProps = {
     onClick: MouseEventHandler,
