@@ -19,7 +19,6 @@ export const  MainHeader = (props: TMainHeaderProps) => {
                 />
             </div>
             <div className="MainHeader__bottomBorder"></div>
-        </div>
-        
+        </div>      
     );
 };

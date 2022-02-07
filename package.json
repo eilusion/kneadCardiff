@@ -10,6 +10,7 @@
     "watch:client:assets": "node scripts/watchAndCopyWebAssets.js",
     "watch:client": "yarn watch:client:ts & yarn watch:client:js & yarn watch:client:assets",
     "watch:server": "yarn pm2 kill && yarn pm2 start dist/api/src/server.js --watch --no-daemon",
+    "watch": "concurrently -p \"{name}\" -n \"API:TS,WEB:TS,WEB:JS,WEB:CP\" -c \"blue.bold,cyan.bold,yellow.bold,magenta.bold\" \"yarn watch:api:ts\" \"yarn watch:client:ts\" \"yarn watch:client:js\" \"yarn watch:client:assets\"",
     "storybook": "start-storybook -p 6006 --no-dll",
     "build-storybook": "build-storybook"
   },
