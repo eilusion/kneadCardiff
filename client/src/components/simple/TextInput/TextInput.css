@@ -5,11 +5,11 @@
     background-color: transparent;
     outline: none;
     font-family: var(--barlow);
-    border-bottom: 3px solid --neutra-l6;
+    border-bottom: 3px solid var(--neutral-6);
     text-transform: uppercase;
     padding-bottom: 0.3rem;
-    padding-top: var(--spacing-medium);
+    padding-top: var(--spacing-edge);
     font-weight: 600;
     width: 100%;
     color: var(--neutra-l2);
-};
+}

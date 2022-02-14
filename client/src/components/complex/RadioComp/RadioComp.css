@@ -4,17 +4,19 @@
     display: inline-flex;
     cursor: pointer;
     padding-top: var(--spacing-bigger);
-    padding-bottom: var(--spacing-bigger);
+    padding-bottom: var(--spacing-small);
 }
 .RadioComp__label {
     font-family: var(--barlow);
     text-transform: uppercase;
     font-size: var(--large-font);
     font-weight: 600;
-    color: var(--neutra-l2);
+    color: var(--neutral-2);
+    align-items: center;
 }
 .RadioComp__radioIcon {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    padding-top: 4px;
     padding-left: var(--spacing-extra-small);
 }

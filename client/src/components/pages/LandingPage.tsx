@@ -1,12 +1,13 @@
-import React from "react";
+import React, { MouseEventHandler } from "react";
 import "./LandingPage.css";
 import { MainHeader } from "../complex/MainHeader/MainHeader";
 import { BigNumber } from "../simple/BigNumber/BigNumber";
 import { PizzaShowcase } from "../complex/PizzaShowcase/PizzaShowcase";
 import { WeAreOpen } from "../simple/WeAreOpen/WeAreOpen";
+import { OrderForm } from "../complex/OrderForm/OrderForm";
+import { OrderTopBar } from "../complex/OrderTopBar/OrderTopBar";
 
 type TLandingPageProps = {
-
 }
 
 export const LandingPage = (props: TLandingPageProps) => {
@@ -51,6 +52,16 @@ export const LandingPage = (props: TLandingPageProps) => {
                     description="Chicken, spinach, mozzarella and garlic oil on a béchamel base, topped with slow-roasted tomatoes, basil & pine kernel pesto and Gran Milano cheese on a Romana base.​"
                     price={1250}
                     buttonText="add to cart"
+                    onClick={() => console.log("Event Triggered")}
+                />
+            </div>
+            <div className="OrderForm">
+                <OrderForm />
+            </div>
+            <div>
+                <OrderTopBar 
+                    pizzaCounter={2}
+                    totalPrice={1650}
                     onClick={() => console.log("Event Triggered")}
                 />
             </div>

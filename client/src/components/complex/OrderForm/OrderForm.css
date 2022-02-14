@@ -1,0 +1,45 @@
+@import "./../../../globalStyles/variables.css";
+
+.OrderForm {
+    max-width: 375px;
+    height: 100%;
+    padding-top: var(--spacing-edge);
+}
+
+.FormContainer {
+    padding-left: var(--spacing-edge);
+}
+
+.CheckoutHeader {
+    padding-bottom: var(--spacing-small);
+}
+
+.OrderTitle {
+    text-transform: uppercase;
+    font-family: var(--barlow);
+    font-size: var(--large-font);
+    font-weight: 600;
+    padding-left: var(--spacing-edge);
+    padding-top: var(--spacing-small);
+    color: var(--neutral-2);
+}
+
+.PizzaBorder {
+    padding-top: var(--spacing-small);
+    padding-bottom: var(--spacing-small);
+}
+
+.DetailsTitle {
+    text-transform: uppercase;
+    font-family: var(--barlow);
+    font-size: var(--large-font);
+    font-weight: 600;
+    padding-left: var(--spacing-edge);
+    color: var(--neutral-2);
+}
+
+.OrderButton {
+    padding-top: var(--spacing-medium);
+    display: flex;
+    justify-content: flex-end;
+}
