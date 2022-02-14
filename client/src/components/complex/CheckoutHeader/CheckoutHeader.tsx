@@ -1,4 +1,4 @@
-import React from "react";
+import React, { MouseEventHandler } from "react";
 import "./CheckoutHeader.css";
 import { Icon } from "../../simple/Icon/Icon"
 import { Icons } from "../../../icons/Icons";
@@ -8,16 +8,20 @@ import { penceToFormattedGBP } from "../../../functions/penceToFormattedGBP";
 type TCheckoutHeaderProps = {
     pizzaCounter: Number,
     totalPrice: Number,
+    onClick: MouseEventHandler
 };
 
 export const CheckoutHeader = (props: TCheckoutHeaderProps) => {
     return (
         <div className="CheckoutHeader">
             <div className="CheckoutHeader__container">
-                <div className="CheckoutHeader__deliveryDining">
-                    <Icon
-                        IconElement={Icons.DELIVERY_DINING}
-                        color={Colors.NEUTRALPAPER}
+                <div 
+                    className="CheckoutHeader__XIcon"
+                    onClick={props.onClick}
+                >
+                    <Icon 
+                        IconElement={Icons.X_ICON}
+                        color={Colors.PRIMARY6}
                     />
                 </div>
                 <div className="CheckoutHeader__pizzaCounter">{props.pizzaCounter}</div>

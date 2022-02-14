@@ -1,12 +1,11 @@
 @import "./../../../globalStyles/variables.css";
 
 .formTitle {
-    display: flex;
-    font-family: var(--barlow);
-    font-size: var(--extra-large-font);
-    color: var(--neutral-l2);
     text-transform: uppercase;
-    padding: 0px var(--spacing-edge);
-    font-weight: 500;
-    width: 100%;
+    font-family: var(--barlow);
+    font-size: 20px;
+    font-weight: 600;
+    /* padding-left: var(--spacing-edge); */
+    padding-top: var(--spacing-small);
+    color: var(--neutral-Ink);
 }
