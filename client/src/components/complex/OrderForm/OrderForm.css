@@ -8,6 +8,7 @@
 
 .FormContainer {
     padding-left: var(--spacing-edge);
+    padding-bottom: var(--spacing-medium);
 }
 
 .CheckoutHeader {
@@ -42,4 +43,9 @@
     padding-top: var(--spacing-medium);
     display: flex;
     justify-content: flex-end;
+}
+
+.PayButton {
+    padding: 50px;
+    color: black;
 }

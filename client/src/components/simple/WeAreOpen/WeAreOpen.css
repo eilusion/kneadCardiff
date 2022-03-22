@@ -6,13 +6,13 @@
     align-items: center;
     padding-bottom: var(--spacing-small);
 }
-.OpenText {
+.WeAreOpen__openText {
     font-family: var(--mont);
     font-size: var(--extra-large-font);
     color: var(--primary-6);
     text-transform: uppercase;
 }
-.AvailableText {
+.WeAreOpen__availableText {
     font-family: var(--barlow);
     font-size: var(--medium-font);
     color: var(--neutral-2);

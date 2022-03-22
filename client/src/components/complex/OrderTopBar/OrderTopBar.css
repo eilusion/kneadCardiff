@@ -1,18 +1,43 @@
 @import "./../../../globalStyles/variables.css";
 
 .OrderTopBar {
-    min-width: 375px;
-    box-shadow: 1px 12px 5px -9px rgba(89,89,89,0.75);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: flex-start;
+    width: 100%;
+    box-shadow: 1px 2px 5px 0px rgba(89,89,89,0.5);
+    background-color: var(--neutral-Paper);
+    transition: all 700ms;
+    cursor: pointer;
+    overflow: scroll;
+    padding-bottom: var(--spacing-medium);
 }
 
-.TopBarContainer {
+.OrderTopBar__open {
+    height: 100vh;
+}
+
+.OrderTopBar__closed {
+    height: 70px;
+}
+
+.OrderTopBar__wrap {
+    min-width: 375px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: var(--spacing-medium);
+}
+
+.OrderTopBar__topBarContainer {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding-top: 20px;
+    justify-content: space-between;
+    padding: var(--spacing-small) var(--spacing-edge); 
+    height: 70px;
 }
 
-.PayButton {
+.OrderTopBar__payButton {
     cursor: pointer;
     margin-right: auto;
     display: flex;
@@ -22,7 +47,7 @@
     width: 40px;
 }
 
-.PizzaCounter {
+.OrderTopBar__pizzaCounter {
     font-family: var(--barlow);
     font-weight: 500;
     color: var(--primary-6);
@@ -30,7 +55,7 @@
     padding-right: 5px;
 }
 
-.TotalPrice {
+.OrderTopBar__totalPrice {
     font-family: var(--barlow);
     font-weight: 500;
     color: var(--primary-6);
@@ -39,7 +64,7 @@
     padding-right: 12px;
 }
 
-.BottomBorder {
+.OrderTopBar__bottomBorder {
     height: 1px;
     width: 100%;
     background-color: grey;
@@ -47,7 +72,7 @@
     margin-top: var(--spacing-small);
 }
 
-.DiningBorder {
+.OrderTopBar__diningBorder {
     display: flex;
     align-items: center;
     justify-content: center;

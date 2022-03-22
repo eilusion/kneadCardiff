@@ -6,7 +6,7 @@
     background-color: var(--neutral-paper);
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 375px;
+    width: 100%;
 }
 .PizzaShowcase__title {
     font-family: var(--mont);

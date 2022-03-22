@@ -1,14 +1,15 @@
-import React, { MouseEventHandler } from "react";
+import React, { FunctionComponentFactory, MouseEventHandler } from "react";
 import "./MenuItem.css";
 import { Icon } from "../../simple/Icon/Icon"
 import { Icons } from "../../../icons/Icons";
 import { Colors } from "../../../variables/Colors"
 import { penceToFormattedGBP } from "../../../functions/penceToFormattedGBP"
+import { TPizzaOrder } from "../PizzaShowcase/PizzaShowcase";
 
 type TMenuItemProps = {
-    onClick: MouseEventHandler,
-    title: string,
-    price: number,
+    onClickRemove: () => void;
+    title: string;
+    price: number;
 };
 
 export const MenuItem = (props: TMenuItemProps) => {
@@ -16,7 +17,7 @@ export const MenuItem = (props: TMenuItemProps) => {
         <div className="MenuItem">
             <div 
                 className="MenuItem__crossIcon" 
-                onClick={props.onClick}
+                onClick={props.onClickRemove}
             >
                 <Icon 
                     IconElement={Icons.CROSS_CIRCLE}

@@ -2,15 +2,17 @@ import React, { MouseEventHandler } from "react";
 import "./DetailsForm.css";
 import { TextInput } from '../../simple/TextInput/TextInput';
 import { ThisOrThatRadio } from '../ThisOrThatRadio/ThisOrThatRadio'
+import { TOrderDetailsForm } from "./../../pages/LandingPage";
+
 
 type TDetailsFormProps = {
-    onChange: MouseEventHandler,
-    form: any,
+    onChange: (form: TOrderDetailsForm) => void;
+    form: TOrderDetailsForm,
 }
 
 export const DetailsForm = (props: TDetailsFormProps) => {
 
-    const onSingleValueChange = (formField, value) => {
+    const onSingleValueChange = (formField: keyof TOrderDetailsForm, value: TOrderDetailsForm[keyof TOrderDetailsForm]) => {
         // this makes a new copy of the props.form object
         // which is important to avoid issues, because object references can cause issues 
         // google up javascript destruct syntax, read up on it alot and get to know it well.

@@ -2,8 +2,8 @@ import React, { MouseEventHandler } from "react";
 import "./BigButton.css";
 
 type TBigButtonProps = {
-    onClick: MouseEventHandler,
-    text: string,
+    text: string;
+    onClick?: MouseEventHandler;
 };
 
 export const BigButton = (props: TBigButtonProps) => {

@@ -7,40 +7,39 @@ import { DetailsForm } from "../DetailsForm/DetailsForm";
 import { PaymentForm } from "../PaymentForm/PaymentForm";
 import { FormTitle } from "../../simple/FormTitle/FormTitle";
 import { BigButton } from "../../simple/BigButton/BigButton";
+import { TPaymentForm, TOrderDetailsForm, TAppState } from "./../../pages/LandingPage";
+import { TPizzaOrder } from "../PizzaShowcase/PizzaShowcase";
 
 type TOrderFormProps = {
+    // TODO: add the correct props and types, to suppport the parent component passing through the form data
+    // and a callback for updating ze forms.
+    paymentForm: TPaymentForm;
+    detailsForm: TOrderDetailsForm;
+    orderedPizzas: Array<TPizzaOrder>;
+    onSetOrderDetailsForm: (form: TOrderDetailsForm) => void;
+    onSetPaymentForm: (form: TPaymentForm) => void;
+    onRemoveItem: (index: Number) => void;
 }
 
 export const OrderForm = (props: TOrderFormProps) => {
-
-    const [form, setForm] = useState({});
-
     return (
         <div className="OrderForm">
             <div className="FormContainer">
-                <div className="CheckoutHeader">
-                    <CheckoutHeader 
-                        pizzaCounter={2}
-                        totalPrice={1650}
-                        onClick={console.log}
-                    />
-                </div>
                 <FormTitle>
                     order details
                 </FormTitle>
+                {/* ~ TODO: iterate over ordered pizzas and display them here with menu item. 
+                    Reference how we did PizzaShowcase for a guideline 
+                */}
                 <div className="MenuItem">
-                    <MenuItem
-                        title="goats cheese romana"
-                        price={1250}
-                        onClick={console.log}
-                    />
-                </div>
-                <div className="MenuItem">
-                    <MenuItem
-                        title="lightly dusted vegan delight"
-                        price={1350}
-                        onClick={console.log}
-                    />
+                    {props.orderedPizzas.map((pizza, index) => (
+                        <MenuItem
+                            key={index}
+                            title={pizza.title}
+                            price={pizza.price}
+                            onClickRemove={() => props.onRemoveItem(index)}
+                        />
+                    ))}
                 </div>
                 <div className="PizzaBorder">
                     <PizzaBorder />
@@ -50,8 +49,8 @@ export const OrderForm = (props: TOrderFormProps) => {
                 </FormTitle>
                 <div className="DetailsForm">
                     <DetailsForm
-                        form={form}
-                        onChange={setForm}
+                        form={props.detailsForm}
+                        onChange={props.onSetOrderDetailsForm}
                     />
                 </div>
                 <FormTitle>
@@ -59,13 +58,13 @@ export const OrderForm = (props: TOrderFormProps) => {
                 </FormTitle>
                 <div className="PaymentForm">
                     <PaymentForm 
-                        form={form}
-                        onChange={setForm}
+                        form={props.paymentForm}
+                        onChange={props.onSetPaymentForm}
                     />
                 </div>
                 <div className="OrderButton">
                 <BigButton
-                    text="add to cart"
+                    text="PAY"
                     onClick={() => console.log("Event Triggered")}
                 />
                 </div>

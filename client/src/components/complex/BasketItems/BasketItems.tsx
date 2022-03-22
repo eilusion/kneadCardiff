@@ -20,7 +20,7 @@ export const BasketItems = (props: TBasketItemsProps) => {
                     key={index}
                     title={item.title}
                     price={item.price}
-                    onClick={() => props.onDelete(index)}
+                    onClickRemove={() => props.onDelete(index)}
                 />
             ))}
         </div>
