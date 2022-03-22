@@ -6,13 +6,15 @@
     align-items: center;
     justify-content: center;
 }
+
 .MainHeader__bottomBorder {
     height: 1px;
-    width: 295px;
+    width: 100%;
     background-color: var(--primary-10);
     margin: auto;
     margin-top: var(--spacing-small);
 }
+
 .MainHeader__logo {
     display: flex;
     align-items: center;

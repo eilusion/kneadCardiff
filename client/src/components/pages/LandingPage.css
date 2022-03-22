@@ -10,16 +10,19 @@
     padding-bottom: var(--spacing-medium);
 }
 
-.MainHeader {
+.LandingPage__mainHeader {
     padding-top: var(--spacing-medium);
     padding-bottom: var(--spacing-medium);
 }
 
-.PizzaShowcase {
-    padding-top: var(--spacing-medium);
+.LandingPage__pizzas {
+    padding: var(--spacing-largest) 0 0 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: var(--spacing-largest);
 }
 
-.OrderForm {
+.LandingPage__orderForm {
     /* position: fixed; */
     display: flex;
     align-items: center;
