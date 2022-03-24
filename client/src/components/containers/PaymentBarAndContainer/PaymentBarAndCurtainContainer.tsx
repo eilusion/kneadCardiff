@@ -1,17 +1,13 @@
-import React, { MouseEventHandler, useState } from 'react';
-import { pipe } from "ramda";
-import "./OrderTopBar.css";
+import React, { useState } from 'react';
+import "./PaymentBarAndCurtainContainer.css";
 import { Icon } from "../../simple/Icon/Icon"
 import { Icons } from "../../../icons/Icons";
 import { Colors } from "../../../variables/Colors";
 import { penceToFormattedGBP } from "../../../functions/penceToFormattedGBP";
 import { BigButton } from '../../simple/BigButton/BigButton';
 import { OrderForm } from '../../complex/OrderForm/OrderForm';
-import { DetailsForm } from '../DetailsForm/DetailsForm';
-import { TAppState, TPaymentForm, TOrderDetailsForm } from "./../../pages/LandingPage";
-import { TPizzaOrder } from '../PizzaShowcase/PizzaShowcase';
-import { MainHeader } from '../MainHeader/MainHeader';
-import { CheckoutHeader } from '../CheckoutHeader/CheckoutHeader';
+import { TAppState, TPaymentForm, TOrderDetailsForm } from "../../pages/LandingPage";
+import { TPizzaOrder } from '../../complex/PizzaShowcase/PizzaShowcase';
 import { FormTitle } from '../../simple/FormTitle/FormTitle';
 
 type TContainerProps = {
@@ -19,7 +15,7 @@ type TContainerProps = {
     setState: (state: TAppState) => void;
 }
 
-export const OrderTopBar = (props: TContainerProps) => {
+export const PaymentBarAndCurtainContainer = (props: TContainerProps) => {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -59,19 +55,19 @@ export const OrderTopBar = (props: TContainerProps) => {
 
     return (
         <div className={`
-            OrderTopBar
-            OrderTopBar__${isOpen ? "open" : "closed"}
+        PaymentBarAndCurtainContainer
+        PaymentBarAndCurtainContainer__${isOpen ? "open" : "closed"}
         `}>
-            <div className="OrderTopBar__wrap">
+            <div className="PaymentBarAndCurtainContainer__wrap">
 
                 {/* CHECKOUT BAR FACE */}
                 <div 
-                    className="OrderTopBar__topBarContainer"
+                    className="PaymentBarAndCurtainContainer__topBarContainer"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {/* PAY/CLOSE BUTTON */}
                     <div 
-                        className="OrderTopBar__payButton"
+                        className="PaymentBarAndCurtainContainer__payButton"
                     >
                         {!isOpen && props.state.orderedPizzas.length > 0 &&
                             <BigButton text='pay'/>
@@ -85,7 +81,7 @@ export const OrderTopBar = (props: TContainerProps) => {
                     </div>
                     
                     {/* BAR - PIZZA COUNT */}
-                    <div className="OrderTopBar__pizzaCounter">
+                    <div className="PaymentBarAndCurtainContainer__pizzaCounter">
                         {props.state.orderedPizzas.length}
                     </div>
                     
@@ -95,12 +91,12 @@ export const OrderTopBar = (props: TContainerProps) => {
                     />
                     
                     {/* BAR - TOTAL COST */}
-                    <div className="OrderTopBar__totalPrice">
+                    <div className="PaymentBarAndCurtainContainer__totalPrice">
                         {getTotalOrderPrice()}
                     </div>
                     
                     {/* BAR - BASKET ICON */}
-                    <div className="OrderTopBar__diningBorder">
+                    <div className="PaymentBarAndCurtainContainer__diningBorder">
                         <Icon
                             IconElement={Icons.BASKET_ICON}
                             color={Colors.PRIMARY6}
@@ -110,7 +106,7 @@ export const OrderTopBar = (props: TContainerProps) => {
 
                 {/* BODY */}
                 <div
-                    className="OrderTopBar__body" 
+                    className="PaymentBarAndCurtainContainer__body" 
                     style={{ height: "500px"}}
                 >
                     {props.state.orderedPizzas.length > 0 &&

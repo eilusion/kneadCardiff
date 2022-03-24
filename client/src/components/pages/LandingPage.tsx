@@ -1,11 +1,11 @@
 import React, { MouseEventHandler, useState } from "react";
 import "./LandingPage.css";
-import { MainHeader } from "../complex/MainHeader/MainHeader";
+import { LogoGreeting } from "../complex/LogoGreeting/LogoGreeting";
 import { BigNumber } from "../simple/BigNumber/BigNumber";
 import { PizzaShowcase, TPizzaOrder } from "../complex/PizzaShowcase/PizzaShowcase";
 import { WeAreOpen } from "../simple/WeAreOpen/WeAreOpen";
 import { OrderForm } from "../complex/OrderForm/OrderForm";
-import { OrderTopBar } from "../complex/OrderTopBar/OrderTopBar";
+import { PaymentBarAndCurtainContainer } from "../containers/PaymentBarAndContainer/PaymentBarAndCurtainContainer";
 
 type TLandingPageProps = {
 }
@@ -99,7 +99,7 @@ export const LandingPage = (props: TLandingPageProps) => {
         <div className="LandingPage">
             {/* CHECKOUT BAR */}
             <div className="LandingPage__orderForm">
-                <OrderTopBar
+                <PaymentBarAndCurtainContainer
                     state={mockState}
                     setState={setState}
                 />  
@@ -107,7 +107,7 @@ export const LandingPage = (props: TLandingPageProps) => {
 
             {/* HEADER */}
             <div className="LandingPage__mainHeader">
-                <MainHeader />
+                <LogoGreeting />
             </div>
 
             {/* OPENING INFO */}

@@ -1,24 +1,24 @@
 import React from "react";
-import "./MainHeader.css";
+import "./LogoGreeting.css";
 import { Icon } from "../../simple/Icon/Icon"
 import { Icons } from "../../../icons/Icons";
 import { Colors } from "../../../variables/Colors"
 
-type TMainHeaderProps = {
+type TLogoGreetingProps = {
     
 }
 
-export const MainHeader = (props: TMainHeaderProps) => {
+export const LogoGreeting = (props: TLogoGreetingProps) => {
     return (
-        <div className="MainHeader">
-            <div className="MainHeader__logo">
+        <div className="LogoGreeting">
+            <div className="LogoGreeting__logo">
                 <Icon 
                     IconElement={Icons.DELIVERY_DINING}
                     color={Colors.NEUTRALPAPER}
                     size="40px"
                 />
             </div>
-            <div className="MainHeader__bottomBorder"></div>
+            <div className="LogoGreeting__bottomBorder"></div>
         </div>      
     );
 };

@@ -6,6 +6,6 @@
     font-size: 20px;
     font-weight: 600;
     /* padding-left: var(--spacing-edge); */
-    padding-top: var(--spacing-small);
+    padding-top: var(--spacing-medium);
     color: var(--neutral-Ink);
 }

@@ -1,13 +1,13 @@
 @import "./../../../globalStyles/variables.css";
 
-.MainHeader {
+.LogoGreeting {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.MainHeader__bottomBorder {
+.LogoGreeting__bottomBorder {
     height: 1px;
     width: 100%;
     background-color: var(--primary-10);
@@ -15,7 +15,7 @@
     margin-top: var(--spacing-small);
 }
 
-.MainHeader__logo {
+.LogoGreeting__logo {
     display: flex;
     align-items: center;
     justify-content: center;
