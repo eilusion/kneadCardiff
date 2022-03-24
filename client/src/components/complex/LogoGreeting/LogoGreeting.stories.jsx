@@ -1,15 +1,15 @@
 import React from "react";
-import { MainHeader } from "./MainHeader";
+import { LogoGreeting } from "./LogoGreeting";
 
 export default {
-    component: MainHeader,
-    title: "Components/MainHeader",
+    component: LogoGreeting,
+    title: "Components/LogoGreeting",
 };
 
 export const Default = () => {
     return (
         <div style={{ width: "375px" }}>
-            <MainHeader 
+            <LogoGreeting 
                 
             />
         </div>
