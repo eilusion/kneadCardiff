@@ -6,6 +6,7 @@ import { PizzaShowcase, TPizzaOrder } from "../complex/PizzaShowcase/PizzaShowca
 import { WeAreOpen } from "../simple/WeAreOpen/WeAreOpen";
 import { OrderForm } from "../complex/OrderForm/OrderForm";
 import { PaymentBarAndCurtainContainer } from "../containers/PaymentBarAndContainer/PaymentBarAndCurtainContainer";
+import { ProcessPayment } from "../simple/ProcessPayment/ProcessPayment";
 
 type TLandingPageProps = {
 }
@@ -132,6 +133,7 @@ export const LandingPage = (props: TLandingPageProps) => {
                     />
                 ))}
             </div>
+            <ProcessPayment />
         </div>
     );
 }; 
