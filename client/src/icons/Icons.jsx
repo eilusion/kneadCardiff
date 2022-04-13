@@ -7,7 +7,7 @@ import BASKET_ICON from "./BasketIcon.svg"
 import X_ICON from "./XIcon.svg"
 import SAD_FACE from "./SadFace.svg"
 import PAYMENT_FAIL from "./PaymentFail.svg"
-import HOUR_GLASS from "./HourGlass.svg"
+import DOWNLOAD_BUTTON from "./DownloadButton.svg"
 
 export const Icons = {
     CROSS_CIRCLE,
@@ -19,5 +19,5 @@ export const Icons = {
     X_ICON,
     SAD_FACE,
     PAYMENT_FAIL,
-    HOUR_GLASS
+    DOWNLOAD_BUTTON
 };
