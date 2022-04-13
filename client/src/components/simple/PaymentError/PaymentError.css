@@ -1,0 +1,24 @@
+@import "./../../../globalStyles/variables.css";
+
+.PaymentError {
+    display: flex;
+    width: 375px;
+    height: 65px;
+    justify-content: space-between;
+    font-family: var(--barlow);
+    text-transform: uppercase;
+    align-items: center;
+    color: #383C36;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid red;
+}
+
+.PaymentError__textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PaymentError__text2 {
+    font-weight: bold;
+}
