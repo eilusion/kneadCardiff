@@ -12,7 +12,7 @@ export const ProcessPayment = (props: TProcessPaymentProps) => {
     return (
         <div className="ProcessPayment">
             <Icon 
-                IconElement={Icons.HOUR_GLASS}
+                IconElement={Icons.DOWNLOAD_BUTTON}
                 color={Colors.PRIMARY8}
                 size="40px"
             />
