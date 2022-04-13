@@ -51,6 +51,7 @@
     "@types/react-dom": "^17.0.11",
     "babel-loader": "^8.2.2",
     "chokidar": "^3.5.3",
+    "concurrently": "^7.1.0",
     "esbuild": "^0.14.11",
     "esbuild-plugin-svgr": "^1.0.0",
     "resolve-url-loader": "^4.0.0",
